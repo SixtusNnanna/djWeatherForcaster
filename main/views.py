@@ -1,12 +1,11 @@
 from django.shortcuts import render, HttpResponseRedirect
 from django.urls import reverse
-'''
+
 # Create your views here.
 def homeView(request):
-    if request.method == 'POST':
-        city = request.POST["city"]
-
+    if request.method == 'GET':
+        city = request.GET.get("city")
+    #prints city on the console 
         print(city)
-        return HttpResponseRedirect(reverse("/"))
+    return render(request, "index.html")
 
-'''
