@@ -1,0 +1,2 @@
+python-forecastio==1.4.0
+django

@@ -23,6 +23,7 @@ git clone https://github.com/[your-username]/weather-forecast-app.git
 ```
 -  Install the dependencies from root directory: 
 ```
+pip install -r requirements.txt
 cd react-weather
 npm install 
 npm run build 
